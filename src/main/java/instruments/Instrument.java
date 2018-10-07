@@ -1,3 +1,5 @@
+package instruments;
+
 public abstract class Instrument {
     private InstrumentType type;
     private String make;
@@ -31,10 +33,6 @@ public abstract class Instrument {
 
     public double getPrice() {
         return price;
-    }
-
-    public void setCost(double cost) {
-        this.cost = cost;
     }
 
     public void setPrice(double price) {

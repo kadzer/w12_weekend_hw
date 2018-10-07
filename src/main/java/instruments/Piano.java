@@ -1,4 +1,9 @@
-public class Piano extends Instrument implements IPlay{
+package instruments;
+
+import shops.IPlay;
+import shops.ISell;
+
+public class Piano extends Instrument implements IPlay, ISell {
     private String pianoType;
 
 
@@ -14,5 +19,9 @@ public class Piano extends Instrument implements IPlay{
     @Override
     public String play() {
         return "Chopin away";
+    }
+
+    public double calculateMarkup() {
+        return getPrice() - getCost();
     }
 }

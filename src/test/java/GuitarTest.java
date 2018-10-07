@@ -1,3 +1,5 @@
+import instruments.Guitar;
+import instruments.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -19,5 +21,10 @@ public class GuitarTest {
     @Test
     public void canPlay() {
         assertEquals("Strum strum, boys and girls", guitar.play());
+    }
+
+    @Test
+    public void canGetMarkup() {
+        assertEquals(35.00, guitar.calculateMarkup(), 0.01);
     }
 }
