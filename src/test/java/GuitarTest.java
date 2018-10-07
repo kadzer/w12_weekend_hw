@@ -8,7 +8,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar(InstrumentType.STRING, "Yamaha", "FG800", "acoustic", 6, "wood");
+        guitar = new Guitar(InstrumentType.STRING, "Yamaha", "FG800",100, 135, "acoustic", 6, "wood");
     }
 
     @Test
